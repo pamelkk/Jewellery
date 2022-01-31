@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Card page Jewellery">
+  <title>HTML Academy: Jewellery</title>
+  <link href="css/min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/poppins-regular.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-bold.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-italic.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/cormorantgaramond-semibold.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/poppins-medium.woff" as="font" type="font/woff" crossorigin="">
+</head>
+
+<body class="page-body">
+  <header class="page-header page-header--card">
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" name="search" id="search" placeholder="Type here to search">
+      <label class="visually-hidden" for="search">Enter the question</label>
+    </form>
+    <button class="page-header__tab" type="button" title="Открыть/Закрыть меню"></button>
+    <a title="Логотип нашей компании" class="page-header__logo" href="main.html">
+      <svg width="66" height="66">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+      <svg width="52" height="52">
+        <use xlink:href="img/sprite_auto.svg#icon-logo-mob"></use>
+      </svg>
+    </a>
+    <div>
+      <a class="page-header__login" href="popup.html">Login</a>
+      <a href="#">Cart 0</a>
+    </div>
+  </header>
+  <main class="page-main page-main-card">
+    <nav class="page-main__nav">
+      <ul>
+        <li class="page-main__nav-item"><a href="#">What’s new</a></li>
+        <li class="page-main__nav-item"><a href="#">Chokers</a></li>
+        <li class="page-main__nav-item"><a href="#">Necklaces</a></li>
+        <li class="page-main__nav-item"><a href="#">Rings</a></li>
+        <li class="page-main__nav-item"><a href="#">Earrings</a></li>
+      </ul>
+    </nav>
+    <section class="page-main-card__product">
+      <h1 class="visually-hidden">Product page</h1>
+      <section class="page-main-card__product-photos">
+        <h2 class="visually-hidden">Product photos</h2>
+
+        <div class="page-main-card__product-photos-preview">
+          <picture>
+            <!-- 1х: 100px; 2x: 200px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-1@2x.webp 2x">
+            <img class="page-main-card__product-photos-preview-img" src="img/necklace-detail-1.png" srcset="img/necklace-detail-1@2x.png 2x" width="100" height="125" alt="Preview photo"></picture>
+          <picture>
+            <!-- 1х: 100px; 2x: 200px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-2@2x.webp 2x">
+            <img class="page-main-card__product-photos-preview-img" src="img/necklace-detail-2.png" srcset="img/necklace-detail-2@2x.png 2x" width="100" height="125" alt="Preview photo"></picture>
+          <picture>
+            <!-- 1х: 100px; 2x: 200px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-3@2x.webp 2x">
+            <img class="page-main-card__product-photos-preview-img" src="img/necklace-detail-3.png" srcset="img/necklace-detail-3@2x.png 2x" width="100" height="125" alt="Preview photo"></picture>
+        </div>
+        <div class="page-main-card__product-photos-focus">
+          <picture>
+            <!-- 1х: 470px; 2x: 940px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-card-big@2x.webp 2x">
+            <img class="page-main-card__product-photos-focus-img" src="img/necklace-detail-card-big.jpg" srcset="img/necklace-detail-card-big@2x.jpg 2x" width="470" height="435" alt="Our jewellery"></picture>
+        </div>
+      </section>
+      <section class="page-main-card__product-about">
+        <h3>Gold Necklace </h3>
+        <span>$ 115</span>
+        <div class="page-main-card__product-about-wrapper">
+          <div class="page-main-card__product-about-wrapper-tabs">
+            <button class="page-main-card__product-about-wrapper-tabs-tab" type="button">Description</button>
+            <button class="page-main-card__product-about-wrapper-tabs-tab page-main-card__product-about-wrapper-tabs-tab--current" type="button">Additional info</button>
+          </div>
+          <dl>
+            <div class="page-main-card__product-about-wrapper-line">
+              <dt>Metal type</dt>
+              <dd>Gold 585</dd>
+            </div>
+            <div class="page-main-card__product-about-wrapper-line">
+              <dt>Stone</dt>
+              <dd>Turquoise</dd>
+            </div>
+            <div class="page-main-card__product-about-wrapper-line">
+              <dt>Size</dt>
+              <dd>18” / 20”</dd>
+            </div>
+          </dl>
+        </div>
+        <button type="button" class="page-main-card__product-about-add">Add to cart</button>
+        <ul class="page-main-card__product-about-features">
+          <li>14 Day Returns</li>
+          <li>2-Year Warranty</li>
+          <li>Free Shipping</li>
+        </ul>
+      </section>
+    </section>
+    <section class="page-main-card__similar">
+      <h4>You May Also Like</h4>
+      <a href="catalog.html">Shop Now</a>
+      <ul class="page-main-card__similar-goods">
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-necklace-mob.webp 1x, img/purple-necklace-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/purple-necklace-tab.webp 1x, img/purple-necklace-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/purple-necklace-dkt.jpg" srcset="img/purple-necklace-dkt@2x.jpg 2x" width="270" height="284" alt="Our jewellery"></picture>
+            <p>Necklace with amethyst</p>
+            <span>$ 145</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/choker-mob.webp 1x, img/choker-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/choker-tab.webp 1x, img/choker-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/choker-dkt.jpg" srcset="img/choker-dkt@2x.jpg 2x" width="270" height="284" alt="Our jewellery"></picture>
+            <p>Layered сhoker</p>
+            <span>$ 115</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gold-necklace-dkt.webp 1x, img/gold-necklace-dkt@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/gold-necklace-dkt.webp 1x, img/gold-necklace-dkt@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/gold-necklace-dkt.jpg" srcset="img/gold-necklace-dkt@2x.jpg 2x" width="270" height="284" alt="Our jewellery"></picture>
+            <p>Gold chain</p>
+            <span>$ 215</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/galaxy-earrings-dkt.webp 1x, img/galaxy-earrings-dkt@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/galaxy-earrings-dkt.webp 1x, img/galaxy-earrings-dkt@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/galaxy-earrings-dkt.jpg" srcset="img/galaxy-earrings-dkt@2x.jpg 2x" width="270" height="284" alt="Our jewellery"></picture>
+            <p>Galaxy earrings</p>
+            <span>$ 95</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/pearl-earrings-mob.webp 1x, img/pearl-earrings-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/pearl-earrings-tab.webp 1x, img/pearl-earrings-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/pearl-earrings-dkt.jpg" srcset="img/pearl-earrings-dkt@2x.jpg 2x" width="270" height="284" alt="Double pearl earrings">
+            </picture>
+            <p>Double pearl earrings</p>
+            <span>$ 115</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/black-choker-gold-mob.webp 1x, img/black-choker-gold-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/black-choker-gold-tab.webp 1x, img/black-choker-gold-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/black-choker-gold-dkt.jpg" srcset="img/black-choker-gold-dkt@2x.jpg 2x" width="270" height="284" alt="Choker with gold bead">
+            </picture>
+            <p>Choker with gold bead</p>
+            <span>$ 55</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gold-layered-necklace-mob.webp 1x, img/gold-layered-necklace-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/gold-layered-necklace-tab.webp 1x, img/gold-layered-necklace-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/gold-layered-necklace-dkt.jpg" srcset="img/gold-layered-necklace-dkt@2x.jpg 2x" width="270" height="284" alt="Gold layered necklace">
+            </picture>
+            <p>Gold layered necklace</p>
+            <span>$ 155</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/blue-gemstone-mob.webp 1x, img/blue-gemstone-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/blue-gemstone-tab.webp 1x, img/blue-gemstone-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/blue-gemstone-dkt.jpg" srcset="img/blue-gemstone-dkt@2x.jpg 2x" width="270" height="284" alt="Blue gemstone pendant">
+            </picture>
+            <p>Blue gemstone pendant</p>
+            <span>$ 105</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/boho-earrings-mob.webp 1x, img/boho-earrings-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/boho-earrings-tab.webp 1x, img/boho-earrings-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/boho-earrings-dkt.jpg" srcset="img/boho-earrings-dkt@2x.jpg 2x" width="270" height="284" alt="Boho earrings"></picture>
+            <p>Boho earrings</p>
+            <span>$ 75</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/bird-necklace-mob.webp 1x, img/bird-necklace-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/bird-necklace-tab.webp 1x, img/bird-necklace-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/bird-necklace-dkt.jpg" srcset="img/bird-necklace-dkt@2x.jpg 2x" width="270" height="284" alt="Gold bird necklace">
+            </picture>
+            <p>Gold bird necklace</p>
+            <span>$ 135</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/black-leather-choker-mob.webp 1x, img/black-leather-choker-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/black-leather-choker-tab.webp 1x, img/black-leather-choker-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/black-leather-choker-dkt.jpg" srcset="img/black-leather-choker-dkt@2x.jpg 2x" width="270" height="284" alt="Black leather choker">
+            </picture>
+            <p>Black leather choker</p>
+            <span>$ 85</span>
+          </a>
+        </li>
+        <li class="page-main-card__similar-goods-item">
+          <a href="card.html">
+            <picture>
+              <!-- 1х: 130px; 2x: 260px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/purple-necklace-mob.webp 1x, img/purple-necklace-mob@2x.webp 2x">
+              <!-- 1х: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/purple-necklace-tab.webp 1x, img/purple-necklace-tab@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="page-main-card__similar-goods-item" src="img/purple-necklace-dkt.jpg" srcset="img/purple-necklace-dkt@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+            </picture>
+            <p>Necklace with amethyst</p>
+            <span>$ 145</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-main-card__pages">
+        <p>1 of 6</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__follow">
+      <h6>The good stuff in your inbox </h6>
+      <p>News and updates from CH. No spam, we promise.</p>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="email" id="mail" name="mail" placeholder="Your E-mail" required="">
+        <label class="visually-hidden" for="mail">Enter your mail</label>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    <section class="page-footer__about">
+      <h6 class="visually-hidden">About us</h6>
+      <ul>
+        <li><a href="#">Ordering & Payment</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Returns & Exchanges</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">About CH</a></li>
+        <li><a href="#">Stores & Hours</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="page-footer__about-social">
+        <li class="page-footer__about-social-item page-footer__about-social-item--fb"><a title="Страница нашей компании на Facebook" href="#">
+            <svg width="8" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+            <svg width="12" height="21">
+              <use xlink:href="img/sprite_auto.svg#icon-fb-mob"></use>
+            </svg><span>Facebook</span></a></li>
+        <li class="page-footer__about-social-item page-footer__about-social-item--inst"><a title="Страница нашей компании в Instagram" href="#">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+            </svg>
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite_auto.svg#icon-inst-mob"></use>
+            </svg><span>Instagram</span></a></li>
+        <li class="page-footer__about-social-item page-footer__about-social-item--pint"><a title="Страница нашей компании на Pinterest" href="#">
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-pint"></use>
+            </svg>
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite_auto.svg#icon-pint-mob"></use>
+            </svg><span>Pinterest</span></a></li>
+        <li class="page-footer__about-social-item page-footer__about-social-item--twit"><a title="Страница нашей компании в Twitter" href="#">
+            <svg width="15" height="13">
+              <use xlink:href="img/sprite_auto.svg#icon-twit"></use>
+            </svg>
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-twit-mob"></use>
+            </svg><span>Twitter</span></a></li>
+      </ul>
+    </section>
+  </footer>
+  <section class="popup-card">
+    <div class="popup-card__wrapper">
+      <button class="popup-card__wrapper-close" type="button" title="Закрыть модальное окно"></button>
+      <h6>The item was added to your cart</h6>
+      <div>
+        <picture>
+          <!-- 1х: 70px; 2x: 140px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-to-cart-mob.webp 1x, img/necklace-detail-to-cart-mob@2x.webp 2x">
+          <!-- 1х: 88px; 2x: 176px -->
+          <source media="(max-width: 1023px)" srcset="img/necklace-detail-to-cart-tab.webp 1x, img/necklace-detail-to-cart-tab@2x.webp 2x">
+          <!-- 1х: 84px; 2x: 168px -->
+          <img class="popup-card__wrapper-img" src="img/necklace-detail-to-cart-dkt.png" srcset="img/necklace-detail-to-cart-dkt@2x.png 2x" width="84" height="79" alt="This good is already in your cart"></picture>
+        <div class="popup-card__wrapper-goods">
+          <h6>Gold Necklace</h6>
+          <span>$ 115</span>
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <button class="popup-card__wrapper-number popup-card__wrapper-number--minus" type="button"></button>
+          <label class="visually-hidden" for="count">Quantity of good</label>
+          <input type="number" id="count" name="count" min="1" max="100" step="1" value="1">
+          <button class="popup-card__wrapper-number popup-card__wrapper-number--plus" type="button"></button>
+        </form>
+      </div>
+      <div class="popup-card__wrapper-total">
+        <p>You have 1 item in the cart</p>
+        <p>Cart subtotal: $ 115</p>
+      </div>
+      <div class="popup-card__wrapper-buttons">
+        <a class="popup-card__wrapper-buttons-continue" href="catalog.html">Continue shopping</a>
+        <a class="popup-card__wrapper-buttons-checkout" href="#">Checkout</a>
+      </div>
+    </div>
+  </section>
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h6>Log In</h6>
+      <button class="popup__wrapper-close" type="button" title="Закрыть модальное окно"></button>
+      <form action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+        <input type="email" id="mail-popup" name="mail-popup" placeholder="Your E-mail" required="">
+        <label class="visually-hidden" for="mail-popup">Enter your mail</label>
+        <input type="password" id="pass-popup" name="pass-popup" placeholder="Password" required="">
+        <label class="visually-hidden" for="pass-popup">Enter your password</label>
+        <a href="#">Forgot your password?</a>
+        <button class="popup__wrapper-submit" type="submit">Log In</button>
+        <span>Don’t have an account?<a class="popup__wrapper-signup" href="#">Sign up</a></span>
+      </form>
+    </div>
+  </section>
+  <section class="popup-menu">
+    <div class="popup-menu__wrapper">
+      <h6 class="visually-hidden">Menu</h6>
+      <div class="popup-menu__wrapper-header">
+        <button class="popup-menu__wrapper-header-tab" type="button" title="Открыть/Закрыть меню"></button>
+        <a title="Логотип нашей компании" class="popup-menu__wrapper-header-logo">
+          <svg width="66" height="66">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-white"></use>
+          </svg>
+          <svg width="52" height="52">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-white-mob"></use>
+          </svg>
+        </a>
+        <button class="popup-menu__wrapper-header-menu" type="button" title="Cart"></button>
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="search" name="search" id="search-popup">
+        <label class="visually-hidden" for="search-popup">Enter the question</label>
+      </form>
+      <nav class="popup-menu__wrapper-nav">
+        <ul>
+          <li class="popup-menu__wrapper-nav-item"><a href="#">What’s new</a></li>
+          <li class="popup-menu__wrapper-nav-item"><a href="#">Chokers</a></li>
+          <li class="popup-menu__wrapper-nav-item"><a href="#">Necklaces</a></li>
+          <li class="popup-menu__wrapper-nav-item"><a href="#">Rings</a></li>
+          <li class="popup-menu__wrapper-nav-item"><a href="#">Earrings</a></li>
+        </ul>
+      </nav>
+      <ul class="popup-menu__wrapper-nav-info">
+        <li><a href="#">About CH</a></li>
+        <li><a href="#">Stores & Hours</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <a class="popup-menu__wrapper-nav-login" href="popup.html">Login</a>
+    </div>
+  </section>
+  <script src="js/min-vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
